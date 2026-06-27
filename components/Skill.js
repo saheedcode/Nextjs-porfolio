@@ -3,8 +3,7 @@ import { motion } from 'framer-motion';
 
 const skills = [
   { name: 'HTML', src: 'https://cdn.simpleicons.org/html5/E34F26' },
-  // Reference your local file here
-  { name: 'CSS', src: '/icons/css3.svg' }, 
+  { name: 'CSS', src: 'https://cdn.simpleicons.org/css/1572B6' },
   { name: 'JavaScript', src: 'https://cdn.simpleicons.org/javascript/F7DF1E' },
   { name: 'React', src: 'https://cdn.simpleicons.org/react/61DAFB' },
   { name: 'Node.js', src: 'https://cdn.simpleicons.org/nodedotjs/339933' },
@@ -27,7 +26,11 @@ export default function Skills() {
               whileHover={{ y: -10 }}
               className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-3 hover:shadow-lg transition-all"
             >
-              <img src={skill.src} alt={skill.name} className="w-8 h-8" />
+              <img 
+                src={skill.src} 
+                alt={skill.name} 
+                className="w-8 h-8 object-contain" 
+              />
               <span className="text-xs font-medium text-gray-700">{skill.name}</span>
             </motion.div>
           ))}

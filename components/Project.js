@@ -6,12 +6,12 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 const projects = [
-  { title: 'Finance Dashboard', desc: 'A responsive dashboard for tracking income...', tags: ['React', 'Chart.js'], image: '/images/ade.jpeg', live: '#', repo: '#' },
-  { title: 'E-Commerce Website', desc: 'Full-stack e-commerce website with cart...', tags: ['Node.js', 'Express'], image: '/images/ade.jpeg', live: '#', repo: '#' },
-  { title: 'Task Management App', desc: 'A task management application...', tags: ['React', 'MongoDB'], image: '/images/ade.jpeg', live: '#', repo: '#' },
-  { title: 'AI Chatbot', desc: 'Conversational AI interface...', tags: ['OpenAI', 'Next.js'], image: '/images/ade.jpeg', live: '#', repo: '#' },
-    { title: 'Weather Tracker', desc: 'Real-time weather data and forecast...', tags: ['API', 'CSS'], image: '/images/ade.jpeg', live: '#', repo: '#' },
-  { title: 'Portfolio Site', desc: 'Personal showcase website...', tags: ['Tailwind', 'Motion'], image: '/images/ade.jpeg', live: '#', repo: '#' },
+  { title: 'Fitness website', desc: 'A Fitness website build with next.js ...', tags: ['Next.js', 'Tailwind css'], image: '/images/fun2.png', live: 'https://strength-bay.vercel.app/', repo: 'https://github.com/saheedcode' },
+  { title: 'Apartment Website', desc: 'Dynamic e-commerce website with cart...', tags: ['Tailwind css', 'Vanilla javascript'], image: '/images/home2.png', live: 'https://my-furniture-nine.vercel.app/', repo: '#' },
+  { title: 'Analytic Dashboard website', desc: 'A static analytical website...', tags: ['React', 'Css'], image: '/images/dash.png', live: 'https://dashboard2-alpha-six.vercel.app/', repo: 'https://github.com/saheedcode' },
+  { title: 'AI Chatbot', desc: 'Conversational AI interface...', tags: ['OpenAI', 'Next.js'], image: '/images/ade.jpeg', live: '#', repo: 'https://github.com/saheedcode' },
+    { title: 'Weather Tracker', desc: 'Real-time weather data and forecast...', tags: ['API', 'CSS'], image: '/images/ade.jpeg', live: '#', repo: 'https://github.com/saheedcode' },
+  { title: 'Portfolio Site', desc: 'Personal showcase website...', tags: ['Tailwind', 'Motion'], image: '/images/ade.jpeg', live: '#', repo: 'https://github.com/saheedcode' },
 ];
 
 export default function RecentProjects() {

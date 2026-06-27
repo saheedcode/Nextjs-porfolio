@@ -4,7 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 
 const testimonials = [
-  { text: "Joe is a great developer! He delivered the project on time...", name: "Sarah Johnson", role: "CEO, TechCorp", img: "/images/ade.jpeg" },
+  { text: "Saheed is a great developer! He delivered the project on time...", name: "Ebenezer Bezen", role: "Energxi, Tech Institute", img: "/images/myboss.jpg" },
   { text: "Great communication and excellent problem-solving skills...", name: "Michael Brown", role: "Product Manager", img: "/images/ade.jpeg" },
   { text: "Working with Joe was a fantastic experience. Professional...", name: "Emily Davis", role: "UI/UX Designer", img: "/images/ade.jpeg" },
    
