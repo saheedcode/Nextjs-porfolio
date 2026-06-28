@@ -5,13 +5,14 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // CORRECTED: All links now point to the root path '/' + the ID
   const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Skills', href: '/skills' },
-    { name: 'Testimonials', href: '/testimonials' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '/#about' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -26,6 +27,7 @@ export default function Navbar() {
             <Link 
               key={item.name} 
               href={item.href} 
+              scroll={false}
               className="text-gray-600 hover:text-blue-700 transition-colors font-medium"
             >
               {item.name}
@@ -64,6 +66,7 @@ export default function Navbar() {
             <Link 
               key={item.name} 
               href={item.href} 
+              scroll={false}
               className="text-gray-600 py-2 block hover:text-blue-700 font-medium" 
               onClick={() => setIsOpen(false)}
             >

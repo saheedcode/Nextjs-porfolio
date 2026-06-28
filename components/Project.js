@@ -10,7 +10,7 @@ const projects = [
   { title: 'Apartment Website', desc: 'Dynamic e-commerce website with cart...', tags: ['Tailwind css', 'Vanilla javascript'], image: '/images/home2.png', live: 'https://my-furniture-nine.vercel.app/', repo: '#' },
   { title: 'Analytic Dashboard website', desc: 'A static analytical website...', tags: ['React', 'Css'], image: '/images/dash.png', live: 'https://dashboard2-alpha-six.vercel.app/', repo: 'https://github.com/saheedcode' },
   { title: 'AI Chatbot', desc: 'Conversational AI interface...', tags: ['OpenAI', 'Next.js'], image: '/images/ade.jpeg', live: '#', repo: 'https://github.com/saheedcode' },
-    { title: 'Weather Tracker', desc: 'Real-time weather data and forecast...', tags: ['API', 'CSS'], image: '/images/ade.jpeg', live: '#', repo: 'https://github.com/saheedcode' },
+  { title: 'Weather Tracker', desc: 'Real-time weather data and forecast...', tags: ['API', 'CSS'], image: '/images/ade.jpeg', live: '#', repo: 'https://github.com/saheedcode' },
   { title: 'Portfolio Site', desc: 'Personal showcase website...', tags: ['Tailwind', 'Motion'], image: '/images/ade.jpeg', live: '#', repo: 'https://github.com/saheedcode' },
 ];
 
@@ -19,7 +19,8 @@ export default function RecentProjects() {
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <section className="py-20 px-6 bg-white">
+    // 1. Added id="projects" and scroll-mt-20 here
+    <section id="projects" className="py-20 px-6 bg-white scroll-mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-end mb-12">
           <div>
@@ -29,6 +30,7 @@ export default function RecentProjects() {
           <button 
             onClick={() => setShowAll(!showAll)}
             className="flex items-center gap-2 text-blue-600 font-medium hover:gap-3 transition-all"
+            aria-label={showAll ? "Show less projects" : "View all projects"}
           >
             {showAll ? 'Show Less' : 'View All Projects'} <ArrowRight size={18} />
           </button>
@@ -39,7 +41,7 @@ export default function RecentProjects() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence>
-            {displayedProjects.map((project, index) => (
+            {displayedProjects.map((project) => (
               <motion.div
                 layout
                 key={project.title}
@@ -63,8 +65,9 @@ export default function RecentProjects() {
                     ))}
                   </div>
                   <div className="flex gap-4 text-sm font-medium">
-                    <a href={project.live} target="_blank" className="flex items-center gap-2 hover:text-blue-600"><FiExternalLink /> Live</a>
-                    <a href={project.repo} target="_blank" className="flex items-center gap-2 hover:text-blue-600"><FiGithub /> GitHub</a>
+                    {/* 2. Added rel="noopener noreferrer" for security */}
+                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-600"><FiExternalLink /> Live</a>
+                    <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-600"><FiGithub /> GitHub</a>
                   </div>
                 </div>
               </motion.div>
@@ -75,4 +78,3 @@ export default function RecentProjects() {
     </section>
   );
 }
-
