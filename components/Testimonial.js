@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const testimonials = [
   { text: "Saheed is a great developer! He delivered the project on time...", name: "Ebenezer Bezen", role: "Energxi, Tech Institute", img: "/images/ben.jpg" },
-  { text: "Great communication and excellent problem-solving skills...", name: "Michael Brown", role: "Product Manager", img: "/images/ade.jpeg" },
-  { text: "Working with saheed was a fantastic experience. Professional...", name: "Emily Davis", role: "UI/UX Designer", img: "/images/tboy.jpeg" },
+  { text: "Great communication and excellent problem-solving skills...", name: "Michael Mathew", role: "Product Manager", img: "/images/tec.jpeg" },
+  { text: "Working with saheed was a fantastic experience. Professional...", name: "Taiwo Olaide", role: "UI/UX Designer", img: "/images/tboy.jpeg" },
    
 ];
 
