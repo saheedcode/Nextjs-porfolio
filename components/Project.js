@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const projects = [
   { title: 'Fitness website', desc: 'A Fitness website build with next.js ...', tags: ['Next.js', 'Tailwind css'], image: '/images/fun2.png', live: 'https://strength-bay.vercel.app/', repo: 'https://github.com/saheedcode' },
-  { title: 'Apartment Website', desc: 'Dynamic e-commerce website with cart...', tags: ['Tailwind css', 'Vanilla javascript'], image: '/images/home2.png', live: 'https://my-furniture-nine.vercel.app/', repo: '#' },
+  { title: 'Apartment Website', desc: 'Dynamic e-commerce website with cart...', tags: ['Tailwind css', 'Vanilla javascript'], image: '/images/home2.png', live: 'https://new-ecommerce-pied.vercel.app/', repo: '#' },
   { title: 'Analytic Dashboard website', desc: 'A static analytical website...', tags: ['React', 'Css'], image: '/images/dash.png', live: 'https://dashboard2-alpha-six.vercel.app/', repo: 'https://github.com/saheedcode' },
   { title: 'Oyapay Website', desc: 'Oyapay website with mobile responsive...', tags: ['React', 'Tailwind Css'], image: '/images/oya.png', live: 'https://oyapay-website.vercel.app/', repo: 'https://github.com/saheedcode' },
   { title: 'Furniture Website', desc: 'Dynamic Furniture website with mobile responsive...', tags: ['React', 'Tailwind Css'], image: '/images/fur.png', live: 'https://my-furniture-nine.vercel.app/', repo: 'https://github.com/saheedcode' },
