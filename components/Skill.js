@@ -6,9 +6,10 @@ const skills = [
   { name: 'CSS', src: 'https://cdn.simpleicons.org/css/1572B6' },
   { name: 'JavaScript', src: 'https://cdn.simpleicons.org/javascript/F7DF1E' },
   { name: 'React', src: 'https://cdn.simpleicons.org/react/61DAFB' },
+   { name: 'Next.js', src: 'https://cdn.simpleicons.org/nextdotjs/000000' }, // Updated
   { name: 'Node.js', src: 'https://cdn.simpleicons.org/nodedotjs/339933' },
   { name: 'Express.js', src: 'https://cdn.simpleicons.org/express/000000' },
-  { name: 'MongoDB', src: 'https://cdn.simpleicons.org/mongodb/47A248' },
+ 
   { name: 'Git & GitHub', src: 'https://cdn.simpleicons.org/github/181717' },
 ];
 
