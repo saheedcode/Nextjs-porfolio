@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Briefcase, FolderKanban, Code2, Smile } from 'lucide-react';
 
 const stats = [
-  { label: 'Years Experience', value: '3+', icon: <Briefcase className="text-blue-600" /> },
+  { label: 'Years Experience', value: '4+', icon: <Briefcase className="text-blue-600" /> },
   { label: 'Projects Completed', value: '20+', icon: <FolderKanban className="text-blue-600" /> },
   { label: 'Technologies', value: '10+', icon: <Code2 className="text-blue-600" /> },
   { label: 'Happy Clients', value: '5+', icon: <Smile className="text-blue-600" /> },
