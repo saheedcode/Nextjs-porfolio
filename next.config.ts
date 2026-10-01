@@ -1,7 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "irevault.com",
+      },
+      {
+        protocol: "https",
+        hostname: "taskflow-sufv.vercel.app",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

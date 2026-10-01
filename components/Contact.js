@@ -1,62 +1,89 @@
 'use client';
 import { motion } from 'framer-motion';
 import { FiMail, FiPhone, FiMapPin, FiClock } from 'react-icons/fi';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
+const contactDetails = [
+  { icon: <FiMail />, label: 'Email', value: 'samotusaheed59@gmail.com', href: 'mailto:samotusaheed59@gmail.com' },
+  { icon: <FiPhone />, label: 'Phone', value: '+234 81 203 23342', href: 'tel:+2348120323342' },
+  { icon: <FiMapPin />, label: 'Location', value: 'Lagos, Nigeria', href: '#' },
+  { icon: <FiClock />, label: 'Availability', value: 'Open to full-time and freelance roles', href: '#' },
+];
 
 export default function Contact() {
   return (
-    // Added id="contact" and scroll-mt-20 for smooth scroll navigation
-    <section id="contact" className="py-20 px-6 bg-white scroll-mt-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-        
-        {/* Contact Info */}
-        <motion.div 
-          initial={{ opacity: 0, x: -20 }} 
+    <section id="contact" className="scroll-mt-20 bg-slate-50 px-4 py-20 md:px-6">
+      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
+          className="space-y-8"
         >
-          <h4 className="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-2">Contact Me</h4>
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Let's Work Together</h2>
-          
-          <div className="space-y-4 text-gray-600">
-            <p className="flex items-center gap-3"><FiMail /> samotusaheed59@gmail.com</p>
-            <p className="flex items-center gap-3"><FiPhone /> +234 81 203 23342</p>
-            <p className="flex items-center gap-3"><FiMapPin /> Lagos, Nigeria</p>
-            <p className="flex items-center gap-3"><FiClock /> Available for freelance</p>
+          <div>
+            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-blue-600">Contact</p>
+            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Let&apos;s build something meaningful.</h2>
           </div>
 
-          {/* Linked Social Icons */}
-          <div className="flex gap-4 mt-8 text-2xl text-gray-700">
-            <a href="https://www.linkedin.com/in/samotusaheed" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="hover:text-blue-600 transition-colors cursor-pointer" />
+          <p className="max-w-lg text-base leading-8 text-slate-600">
+            I&apos;m actively looking for roles where I can contribute to product quality, team velocity, and customer experience.
+          </p>
+
+          <div className="space-y-4">
+            {contactDetails.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-700">{item.icon}</div>
+                <div>
+                  <p className="text-xs uppercase tracking-[0.15em] text-slate-500">{item.label}</p>
+                  <p className="mt-1 text-sm font-medium text-slate-800">{item.value}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="flex gap-4 text-2xl text-slate-700">
+            <a href="https://www.linkedin.com/in/samotusaheed" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white p-3 shadow-sm transition hover:text-blue-700">
+              <FaLinkedin />
             </a>
-            <a href="https://github.com/saheedcode" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="hover:text-blue-600 transition-colors cursor-pointer" />
-            </a>
-            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="hover:text-blue-600 transition-colors cursor-pointer" />
+            <a href="https://github.com/saheedcode" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white p-3 shadow-sm transition hover:text-slate-900">
+              <FaGithub />
             </a>
           </div>
         </motion.div>
 
-        {/* Form */}
-        <motion.form 
-          action="https://formspree.io/f/mnjgvana" 
+        <motion.form
+          action="https://formspree.io/f/mnjgvana"
           method="POST"
-          initial={{ opacity: 0, x: 20 }} 
-          whileInView={{ opacity: 1, x: 0 }} 
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-gray-50 p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4"
+          className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm md:p-8"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input type="text" name="name" placeholder="Your Name" required className="w-full p-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-600" />
-            <input type="email" name="email" placeholder="Your Email" required className="w-full p-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-600" />
+          <div className="mb-6 flex items-center justify-between gap-3">
+            <h3 className="text-2xl font-bold text-slate-900">Send a message</h3>
+            <span className="rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-emerald-700">Available</span>
           </div>
-          <input type="text" name="subject" placeholder="Subject" className="w-full p-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-600" />
-          <textarea name="message" placeholder="Your Message" rows="4" required className="w-full p-3 rounded-lg border border-gray-200 focus:outline-none focus:border-blue-600"></textarea>
-          <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-            Send Message
-          </button>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            <input type="text" name="name" placeholder="Your Name" required className="w-full rounded-2xl border border-slate-200 bg-slate-50 p-3.5 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:bg-white" />
+            <input type="email" name="email" placeholder="Your Email" required className="w-full rounded-2xl border border-slate-200 bg-slate-50 p-3.5 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:bg-white" />
+          </div>
+
+          <input type="text" name="subject" placeholder="Subject" className="mt-4 w-full rounded-2xl border border-slate-200 bg-slate-50 p-3.5 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:bg-white" />
+          <textarea name="message" placeholder="Your Message" rows="5" required className="mt-4 w-full rounded-2xl border border-slate-200 bg-slate-50 p-3.5 text-sm text-slate-800 outline-none transition focus:border-blue-500 focus:bg-white"></textarea>
+
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <button type="submit" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-700">
+              Send Message
+            </button>
+            <a href="/Samotu_Saheed_FullStack_Resume_v2.docx" download className="rounded-full border border-slate-300 bg-white px-6 py-3 text-center text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50">
+              Download CV
+            </a>
+          </div>
         </motion.form>
       </div>
     </section>

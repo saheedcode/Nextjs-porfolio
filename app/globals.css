@@ -1,15 +1,46 @@
 
 
-
 @import "tailwindcss";
+
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --panel-soft: #eef4ff;
+  --text: #0f172a;
+  --muted: #52607a;
+  --primary: #2563eb;
+  --primary-deep: #1d4ed8;
+  --border: rgba(148, 163, 184, 0.25);
+  --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
-  /* This ensures sections stop 'underneath' your navbar */
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image:
+      radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.08), transparent 24%),
+      linear-gradient(180deg, #f8fafc 0%, #f3f7ff 100%);
+  }
+
   section {
-    scroll-margin-top: 80px; 
+    scroll-margin-top: 90px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
   }
 }
