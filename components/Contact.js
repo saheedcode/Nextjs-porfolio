@@ -6,8 +6,8 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const contactDetails = [
   { icon: <FiMail />, label: 'Email', value: 'samotusaheed59@gmail.com', href: 'mailto:samotusaheed59@gmail.com' },
   { icon: <FiPhone />, label: 'Phone', value: '+234 81 203 23342', href: 'tel:+2348120323342' },
-  { icon: <FiMapPin />, label: 'Location', value: 'Lagos, Nigeria', href: '#' },
-  { icon: <FiClock />, label: 'Availability', value: 'Open to full-time and freelance roles', href: '#' },
+  { icon: <FiMapPin />, label: 'Location', value: 'Lagos, Nigeria', href: 'https://maps.google.com/?q=Lagos,Nigeria' },
+  { icon: <FiClock />, label: 'Availability', value: 'Open to full-time and freelance roles', href: 'mailto:samotusaheed59@gmail.com?subject=Project%20Inquiry' },
 ];
 
 export default function Contact() {
@@ -22,11 +22,11 @@ export default function Contact() {
         >
           <div>
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-blue-600">Contact</p>
-            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Let&apos;s build something meaningful.</h2>
+            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Let&apos;s build a product people remember.</h2>
           </div>
 
           <p className="max-w-lg text-base leading-8 text-slate-600">
-            I&apos;m actively looking for roles where I can contribute to product quality, team velocity, and customer experience.
+            I&apos;m actively looking for opportunities where I can contribute to product quality, team velocity, and user experiences that feel exceptional from the first interaction.
           </p>
 
           <div className="space-y-4">

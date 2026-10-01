@@ -29,8 +29,8 @@ export default function AboutMe() {
 
           <div className="space-y-5 text-base leading-8 text-slate-600">
             <p>
-              I&apos;m a developer with a strong focus on building responsive, high-quality web experiences that balance design,
-              performance, and business value.
+              I&apos;m a developer with over four years of experience building responsive, high-quality web experiences that
+              balance design, performance, and business value.
             </p>
             <p>
               My work blends frontend craftsmanship with full-stack thinking, which means I can turn product ideas into

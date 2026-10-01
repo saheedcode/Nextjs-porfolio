@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'Irevault',
     category: 'Digital Marketplace Platform',
-    desc: 'Irevault is a digital marketplace where users can register, sell digital products, and manage transactions in a secure, streamlined environment. I was part of the team that built the full-stack platform, contributing to the product experience and the core marketplace functionality.',
+    desc: 'Irevault is a digital marketplace designed to help creators sell premium digital products in a secure, streamlined environment. I contributed to the product experience and core marketplace flows, blending intuitive UX with dependable full-stack functionality.',
     tags: ['Full-Stack', 'Marketplace UX', 'Product Build'],
     image: 'https://irevault.com/images/hero-creator-premium.png',
     live: 'https://irevault.com',
@@ -18,16 +18,25 @@ const projects = [
   {
     title: 'TaskFlow',
     category: 'Project Management Platform',
-    desc: 'TaskFlow is a full-stack productivity dashboard for teams to manage tasks, boards, priorities, and activity in a streamlined workflow. It highlights my ability to build collaborative product experiences with solid backend logic and polished frontend UX.',
+    desc: 'TaskFlow is a collaborative productivity platform built to help teams manage priorities, workflows, and delivery with clarity. It reflects my ability to design product-driven experiences and build reliable frontend systems supported by strong backend logic.',
     tags: ['Full-Stack', 'Kanban', 'Team Workflow'],
     image: 'https://taskflow-sufv.vercel.app/icon.svg',
     live: 'https://taskflow-sufv.vercel.app/',
     repo: '#',
   },
   {
+    title: 'DrosCare',
+    category: 'Hospital Management Platform',
+    desc: 'DrosCare is a healthcare platform built to connect departments, clinicians, and patient support teams within a coordinated system. The experience focuses on smoother communication, efficient patient handling, and a more organized care journey across the hospital workflow.',
+    tags: ['Healthcare UX', 'Hospital Workflow', 'System Design'],
+    image: 'https://dros-care.vercel.app/_next/image?url=%2Fimages%2Fhero-doctors.jpg&w=640&q=75',
+    live: 'https://dros-care.vercel.app/',
+    repo: '#',
+  },
+  {
     title: 'Strength Bay',
     category: 'Fitness Brand',
-    desc: 'A premium fitness landing experience focused on conversion, mobile responsiveness, and clean product storytelling.',
+    desc: 'A premium fitness landing experience crafted for conversion, mobile responsiveness, and memorable brand storytelling.',
     tags: ['Next.js', 'Tailwind CSS'],
     image: '/images/fun2.png',
     live: 'https://strength-bay.vercel.app/',
@@ -36,7 +45,7 @@ const projects = [
   {
     title: 'Apartment Store',
     category: 'E-commerce Experience',
-    desc: 'A polished storefront with product presentation, responsive layout, and a simplified shopping journey.',
+    desc: 'A refined storefront experience focused on product storytelling, visual clarity, and a smooth shopping journey across devices.',
     tags: ['Tailwind CSS', 'JavaScript'],
     image: '/images/home2.png',
     live: 'https://new-ecommerce-pied.vercel.app/',
@@ -45,7 +54,7 @@ const projects = [
   {
     title: 'Oyapay',
     category: 'Business Website',
-    desc: 'A responsive marketing website designed to present a modern fintech brand with a strong visual hierarchy.',
+    desc: 'A modern fintech marketing website designed to communicate trust, value, and clarity through a premium digital experience.',
     tags: ['React', 'Tailwind CSS'],
     image: '/images/oya.png',
     live: 'https://oyapay-website.vercel.app/',
@@ -54,7 +63,7 @@ const projects = [
   {
     title: 'Furniture Showcase',
     category: 'Lifestyle Brand',
-    desc: 'A lifestyle storefront built to highlight product categories, premium visuals, and smooth browsing experience.',
+    desc: 'A lifestyle storefront designed around product discovery, elevated visuals, and a polished browsing experience that feels premium.',
     tags: ['React', 'Tailwind CSS'],
     image: '/images/fur.png',
     live: 'https://my-furniture-nine.vercel.app/',
@@ -72,7 +81,7 @@ export default function RecentProjects() {
         <div className="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-blue-600">My Projects</p>
-            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Selected work that reflects my standards</h2>
+            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Selected work shaped by craftsmanship, clarity, and measurable value</h2>
           </div>
 
           <button

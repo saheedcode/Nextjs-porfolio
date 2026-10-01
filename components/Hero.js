@@ -2,10 +2,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const strengths = ['Frontend Development', 'Full-Stack Thinking', 'Responsive UI Design'];
+const strengths = ['Premium UI Design', 'Frontend Architecture', 'Full-Stack Execution'];
 
 const quickStats = [
-  { value: '3+', label: 'Years Experience' },
+  { value: '4+', label: 'Years Experience' },
   { value: '20+', label: 'Projects Built' },
   { value: '100%', label: 'Delivery Focus' },
 ];
@@ -23,22 +23,22 @@ export default function Hero() {
           className="flex-1 space-y-8"
         >
           <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">
-            Open to Frontend & Full-Stack Roles
+            Open to Senior Frontend & Full-Stack Roles
           </div>
 
           <div className="space-y-4">
             <h1 className="text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
               I design and build
-              <span className="block text-blue-700">modern digital products</span>
+              <span className="block text-blue-700">premium digital experiences</span>
             </h1>
             <h2 className="text-xl font-semibold text-slate-700 md:text-2xl">
-              Hi, I&apos;m Saheed — Frontend Developer & Full-Stack Enthusiast
+              Hi, I&apos;m Saheed — Product-minded Frontend Developer with 4+ years of experience
             </h2>
           </div>
 
           <p className="max-w-xl text-base leading-8 text-slate-600 md:text-lg">
-            I create clean, high-converting interfaces and reliable full-stack experiences that help businesses grow,
-            users engage, and products perform at scale.
+            I craft polished, conversion-focused interfaces and dependable full-stack experiences that help brands grow,
+            users engage, and products feel premium from the first click to the final action.
           </p>
 
           <div className="flex flex-wrap gap-3">

@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "taskflow-sufv.vercel.app",
       },
+      {
+        protocol: "https",
+        hostname: "dros-care.vercel.app",
+      },
     ],
   },
 };
