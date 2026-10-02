@@ -2,12 +2,12 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const strengths = ['Premium UI Design', 'Frontend Architecture', 'Full-Stack Execution'];
+const strengths = ['React & Next.js', 'Responsive Interfaces', 'Full-Stack Features'];
 
 const quickStats = [
   { value: '4+', label: 'Years Experience' },
   { value: '20+', label: 'Projects Built' },
-  { value: '100%', label: 'Delivery Focus' },
+  { value: 'React + Next.js', label: 'Core Stack' },
 ];
 
 export default function Hero() {
@@ -23,22 +23,22 @@ export default function Hero() {
           className="flex-1 space-y-8"
         >
           <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">
-            Open to Senior Frontend & Full-Stack Roles
+            Open to Frontend & Full-Stack Opportunities
           </div>
 
           <div className="space-y-4">
             <h1 className="text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
-              I design and build
-              <span className="block text-blue-700">premium digital experiences</span>
+              I build web products
+              <span className="block text-blue-700">that make work simpler.</span>
             </h1>
             <h2 className="text-xl font-semibold text-slate-700 md:text-2xl">
-              Hi, I&apos;m Saheed — Product-minded Frontend Developer with 4+ years of experience
+              I&apos;m Saheed Samotu, a frontend developer focused on React, Next.js, and thoughtful product experiences.
             </h2>
           </div>
 
           <p className="max-w-xl text-base leading-8 text-slate-600 md:text-lg">
-            I craft polished, conversion-focused interfaces and dependable full-stack experiences that help brands grow,
-            users engage, and products feel premium from the first click to the final action.
+            I turn product requirements into responsive interfaces and reliable features, with a focus on clear user flows,
+            maintainable code, and the details that make software easier to use.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -57,13 +57,13 @@ export default function Hero() {
               href="#projects"
               className="rounded-full bg-blue-600 px-8 py-3.5 text-center text-base font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-700"
             >
-              View My Work
+              Explore Projects
             </a>
             <a
               href="#contact"
               className="rounded-full border border-slate-300 bg-white px-8 py-3.5 text-center text-base font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50"
             >
-              Contact Me
+              Let&apos;s Talk
             </a>
           </div>
 
@@ -93,8 +93,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="absolute -bottom-4 left-5 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-lg">
-            <p className="text-xs uppercase tracking-[0.18em] text-slate-500">Availability</p>
-            <p className="mt-1 text-sm font-semibold text-slate-900">Available for remote roles</p>
+            <p className="text-xs uppercase tracking-[0.18em] text-slate-500">Currently</p>
+            <p className="mt-1 text-sm font-semibold text-slate-900">Open to remote opportunities</p>
           </div>
         </motion.div>
       </div>

@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Network } from 'lucide-react';
 
 const skillGroups = [
   {
@@ -21,7 +22,7 @@ const skillGroups = [
       { name: 'Express.js', src: 'https://cdn.simpleicons.org/express/000000' },
       { name: 'MongoDB', src: 'https://cdn.simpleicons.org/mongodb/47A248' },
       { name: 'PostgreSQL', src: 'https://cdn.simpleicons.org/postgresql/4169E1' },
-      { name: 'REST API', src: 'https://cdn.simpleicons.org/rapidapi/FF6B35' },
+      { name: 'REST API', icon: Network },
     ],
   },
   {
@@ -56,15 +57,23 @@ export default function Skills() {
             >
               <h3 className="mb-5 text-lg font-bold text-slate-900">{group.title}</h3>
               <div className="grid grid-cols-2 gap-4">
-                {group.skills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-3"
-                  >
-                    <img src={skill.src} alt={skill.name} className="h-6 w-6 object-contain" />
-                    <span className="text-sm font-medium text-slate-700">{skill.name}</span>
-                  </div>
-                ))}
+                {group.skills.map((skill) => {
+                  const Icon = skill.icon;
+
+                  return (
+                    <div
+                      key={skill.name}
+                      className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-3"
+                    >
+                      {Icon ? (
+                        <Icon aria-hidden="true" className="h-6 w-6 text-orange-600" />
+                      ) : (
+                        <img src={skill.src} alt={skill.name} className="h-6 w-6 object-contain" />
+                      )}
+                      <span className="text-sm font-medium text-slate-700">{skill.name}</span>
+                    </div>
+                  );
+                })}
               </div>
             </motion.div>
           ))}

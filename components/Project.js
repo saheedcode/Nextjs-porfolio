@@ -33,6 +33,15 @@ const projects = [
     live: 'https://dros-care.vercel.app/',
     repo: '#',
   },
+   {
+    title: 'Panto Furniture Showcase',
+    category: 'Lifestyle Brand',
+    desc: 'A lifestyle storefront designed around product discovery, elevated visuals, and a polished browsing experience that feels premium.',
+    tags: ['React', 'Tailwind CSS'],
+    image: '/images/fur.png',
+    live: 'https://my-furniture-nine.vercel.app/',
+    repo: 'https://github.com/saheedcode',
+  },
   {
     title: 'Strength Bay',
     category: 'Fitness Brand',
@@ -60,15 +69,7 @@ const projects = [
     live: 'https://oyapay-website.vercel.app/',
     repo: 'https://github.com/saheedcode',
   },
-  {
-    title: 'Furniture Showcase',
-    category: 'Lifestyle Brand',
-    desc: 'A lifestyle storefront designed around product discovery, elevated visuals, and a polished browsing experience that feels premium.',
-    tags: ['React', 'Tailwind CSS'],
-    image: '/images/fur.png',
-    live: 'https://my-furniture-nine.vercel.app/',
-    repo: 'https://github.com/saheedcode',
-  },
+ 
 ];
 
 export default function RecentProjects() {

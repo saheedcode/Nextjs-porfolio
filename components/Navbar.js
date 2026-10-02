@@ -48,7 +48,7 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="/Samotu_Saheed_FullStack_Resume_v2.docx"
+            href="/Samotu_Saheed_Resume-1.pdf"
             download
             className="rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
           >
@@ -87,7 +87,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="/Samotu_Saheed_FullStack_Resume_v2.docx"
+              href="/Samotu_Saheed_Resume-1.pdf"
               download
               className="rounded-full bg-slate-900 px-5 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setIsOpen(false)}

@@ -24,7 +24,7 @@ export default function AboutMe() {
         >
           <div>
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-blue-600">About Me</p>
-            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">I build polished experiences that feel premium and work reliably.</h2>
+            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">I turn product requirements into clear, dependable web experiences.</h2>
           </div>
 
           <div className="space-y-5 text-base leading-8 text-slate-600">

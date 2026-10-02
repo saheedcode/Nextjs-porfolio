@@ -80,7 +80,7 @@ export default function Contact() {
             <button type="submit" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-700">
               Send Message
             </button>
-            <a href="/Samotu_Saheed_FullStack_Resume_v2.docx" download className="rounded-full border border-slate-300 bg-white px-6 py-3 text-center text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50">
+            <a href="/Samotu_Saheed_Resume-1.pdf" download className="rounded-full border border-slate-300 bg-white px-6 py-3 text-center text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50">
               Download CV
             </a>
           </div>
