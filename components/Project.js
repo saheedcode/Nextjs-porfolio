@@ -16,15 +16,16 @@ const projects = [
     repo: '#',
   },
   {
-    title: 'TaskFlow',
-    category: 'Project Management Platform',
-    desc: 'TaskFlow is a collaborative productivity platform built to help teams manage priorities, workflows, and delivery with clarity. It reflects my ability to design product-driven experiences and build reliable frontend systems supported by strong backend logic.',
-    tags: ['Full-Stack', 'Kanban', 'Team Workflow'],
-    image: 'https://taskflow-sufv.vercel.app/icon.svg',
-    live: 'https://taskflow-sufv.vercel.app/',
+    title: 'Exclusive Online Store',
+    category: 'E-commerce Platform',
+    desc: 'An online storefront for discovering products across electronics, fashion, gaming, and home categories, with promotional offers, product ratings, wishlists, and a shopping cart.',
+    tags: ['E-commerce', 'Product Discovery', 'Shopping UX'],
+    image: 'https://ecommerce-roan-ten-21.vercel.app/images/phone.png',
+    live: 'https://ecommerce-roan-ten-21.vercel.app/',
     repo: '#',
   },
-  {
+
+   {
     title: 'DrosCare',
     category: 'Hospital Management Platform',
     desc: 'DrosCare is a healthcare platform built to connect departments, clinicians, and patient support teams within a coordinated system. The experience focuses on smoother communication, efficient patient handling, and a more organized care journey across the hospital workflow.',
@@ -34,14 +35,16 @@ const projects = [
     repo: '#',
   },
   {
-    title: 'Exclusive Online Store',
-    category: 'E-commerce Platform',
-    desc: 'An online storefront for discovering products across electronics, fashion, gaming, and home categories, with promotional offers, product ratings, wishlists, and a shopping cart.',
-    tags: ['E-commerce', 'Product Discovery', 'Shopping UX'],
-    image: 'https://ecommerce-roan-ten-21.vercel.app/images/phone.png',
-    live: 'https://ecommerce-roan-ten-21.vercel.app/',
+    title: 'TaskFlow',
+    category: 'Project Management Platform',
+    desc: 'TaskFlow is a collaborative productivity platform built to help teams manage priorities, workflows, and delivery with clarity. It reflects my ability to design product-driven experiences and build reliable frontend systems supported by strong backend logic.',
+    tags: ['Full-Stack', 'Kanban', 'Team Workflow'],
+    image: 'https://taskflow-sufv.vercel.app/icon.svg',
+    live: 'https://taskflow-sufv.vercel.app/',
     repo: '#',
   },
+ 
+  
    {
     title: 'Panto Furniture Showcase',
     category: 'Lifestyle Brand',
