@@ -33,6 +33,15 @@ const projects = [
     live: 'https://dros-care.vercel.app/',
     repo: '#',
   },
+  {
+    title: 'Exclusive Online Store',
+    category: 'E-commerce Platform',
+    desc: 'An online storefront for discovering products across electronics, fashion, gaming, and home categories, with promotional offers, product ratings, wishlists, and a shopping cart.',
+    tags: ['E-commerce', 'Product Discovery', 'Shopping UX'],
+    image: 'https://ecommerce-roan-ten-21.vercel.app/images/phone.png',
+    live: 'https://ecommerce-roan-ten-21.vercel.app/',
+    repo: '#',
+  },
    {
     title: 'Panto Furniture Showcase',
     category: 'Lifestyle Brand',

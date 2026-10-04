@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "dros-care.vercel.app",
       },
+      {
+        protocol: "https",
+        hostname: "ecommerce-roan-ten-21.vercel.app",
+      },
     ],
   },
 };
