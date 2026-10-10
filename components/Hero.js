@@ -5,7 +5,7 @@ import Image from 'next/image';
 const strengths = ['React & Next.js', 'Responsive Interfaces', 'Full-Stack Features'];
 
 const quickStats = [
-  { value: '4+', label: 'Years Experience' },
+  { value: '3+', label: 'Years Experience' },
   { value: '20+', label: 'Projects Built' },
   { value: 'React + Next.js', label: 'Core Stack' },
 ];
