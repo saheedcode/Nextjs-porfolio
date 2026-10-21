@@ -94,7 +94,7 @@ export default function RecentProjects() {
         <div className="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-blue-600">My Projects</p>
-            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Selected work shaped by craftsmanship, clarity, and measurable value</h2>
+            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Selected work, from polished interfaces to full-stack product experiences</h2>
           </div>
 
           <button

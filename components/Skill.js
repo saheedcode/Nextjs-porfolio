@@ -1,10 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Network } from 'lucide-react';
+import { BadgeCheck, Database, Network, ShieldCheck } from 'lucide-react';
 
 const skillGroups = [
   {
-    title: 'Frontend',
+    title: 'Frontend Engineering',
+    description: 'Responsive, accessible interfaces built for real users and product goals.',
     skills: [
       { name: 'HTML', src: 'https://cdn.simpleicons.org/html5/E34F26' },
       { name: 'CSS', src: 'https://cdn.simpleicons.org/css/1572B6' },
@@ -17,22 +18,36 @@ const skillGroups = [
   },
   {
     title: 'Backend & APIs',
+    description: 'Server-side application logic, secure authentication, and reliable API integrations.',
     skills: [
       { name: 'Node.js', src: 'https://cdn.simpleicons.org/nodedotjs/339933' },
       { name: 'Express.js', src: 'https://cdn.simpleicons.org/express/000000' },
-      { name: 'MongoDB', src: 'https://cdn.simpleicons.org/mongodb/47A248' },
-      { name: 'PostgreSQL', src: 'https://cdn.simpleicons.org/postgresql/4169E1' },
       { name: 'REST API', icon: Network },
+      { name: 'Authentication', icon: ShieldCheck },
+      { name: 'Validation', icon: BadgeCheck },
+      { name: 'Security Basics', icon: ShieldCheck },
     ],
   },
   {
-    title: 'Tools & Workflow',
+    title: 'Databases & Data',
+    description: 'Structured data, relational schema design, and practical SQL query patterns.',
+    skills: [
+      { name: 'MySQL', src: 'https://cdn.simpleicons.org/mysql/4479A1' },
+      { name: 'SQL', icon: Database },
+      { name: 'MongoDB', src: 'https://cdn.simpleicons.org/mongodb/47A248' },
+      { name: 'PostgreSQL', src: 'https://cdn.simpleicons.org/postgresql/4169E1' },
+    ],
+  },
+  {
+    title: 'Testing & Delivery',
+    description: 'Practical quality checks and collaborative workflows from development to deployment.',
     skills: [
       { name: 'Git', src: 'https://cdn.simpleicons.org/git/F05032' },
       { name: 'GitHub', src: 'https://cdn.simpleicons.org/github/181717' },
       { name: 'Vercel', src: 'https://cdn.simpleicons.org/vercel/000000' },
       { name: 'Figma', src: 'https://cdn.simpleicons.org/figma/F24E1E' },
-      { name: 'SEO', src: 'https://cdn.simpleicons.org/google/4285F4' },
+      { name: 'API Testing', icon: BadgeCheck },
+      { name: 'Performance & SEO', icon: BadgeCheck },
     ],
   },
 ];
@@ -46,7 +61,7 @@ export default function Skills() {
           <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">What I bring to a product team</h2>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-2">
           {skillGroups.map((group, index) => (
             <motion.div
               key={group.title}
@@ -56,6 +71,7 @@ export default function Skills() {
               className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
             >
               <h3 className="mb-5 text-lg font-bold text-slate-900">{group.title}</h3>
+              <p className="mb-5 text-sm leading-6 text-slate-600">{group.description}</p>
               <div className="grid grid-cols-2 gap-4">
                 {group.skills.map((skill) => {
                   const Icon = skill.icon;

@@ -24,17 +24,18 @@ export default function AboutMe() {
         >
           <div>
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-blue-600">About Me</p>
-            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">I turn product requirements into clear, dependable web experiences.</h2>
+            <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">I build complete web products, from polished interfaces to dependable APIs and data.</h2>
           </div>
 
           <div className="space-y-5 text-base leading-8 text-slate-600">
             <p>
-              I&apos;m a developer with over three years of experience building responsive, high-quality web experiences that
-              balance design, performance, and business value.
+              I&apos;m a developer with over three years of experience building responsive web products that balance
+              thoughtful design, reliable engineering, and business value.
             </p>
             <p>
-              My work blends frontend craftsmanship with full-stack thinking, which means I can turn product ideas into
-              usable digital experiences—from user interface design and development to implementing clean logic and API-driven features.
+              I work across the stack: building accessible interfaces with React, Next.js, and TypeScript; developing
+              Node.js and Express APIs; and modeling application data with MySQL. I care about clear API contracts,
+              validation, maintainable code, and smooth integration between the browser, server, and database.
             </p>
 
             <AnimatePresence>
@@ -45,8 +46,9 @@ export default function AboutMe() {
                   exit={{ height: 0, opacity: 0 }}
                   className="overflow-hidden"
                 >
-                  I enjoy solving real-world problems with simple, scalable solutions, and I&apos;m always improving my technical
-                  skills to stay relevant in fast-moving product teams.
+                  I also work with authentication flows, relational data design, Git-based collaboration, and deployment
+                  workflows. I enjoy taking a feature from its first user-facing interaction through the backend logic
+                  and data it depends on, then refining it for performance and maintainability.
                 </motion.p>
               )}
             </AnimatePresence>
